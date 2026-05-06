@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #534ab7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #534ab7;
+}
+
+/* Hero Section */
+#hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #534ab7;
+}
+
+#hero p {
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+/* Sections */
+section {
+  padding: 80px 60px;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+section p {
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* Project card */
+.project-card {
+  background-color: #111111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #534ab7;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 16px;
+}
+
+.project-card a {
+  color: #534ab7;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.project-card a:hover {
+  color: #7c6fff;
+}
+
+/* Contact section */
+#contact a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #534ab7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+#contact a:hover {
+  background-color: #3c3489;
+}

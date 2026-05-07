@@ -38,6 +38,35 @@ function highlightNav() {
       }
     })
   })
+  navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+      navLinks.forEach(function(l) {
+        l.classList.remove("active")
+      })
+      this.classList.add("active")
+    })
+  })
 }
 
 highlightNav()
+
+function backToTop() {
+  const button = document.querySelector("#back-to-top")
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+      button.classList.add("visible")
+    } else {
+      button.classList.remove("visible")
+    }
+  })
+
+  button.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  })
+}
+
+backToTop()

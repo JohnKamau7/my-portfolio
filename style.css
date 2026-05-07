@@ -153,3 +153,51 @@ section p {
 #contact a:hover {
   background-color: #3c3489;
 }
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  background-color: #111111;
+  border: 1px solid #534ab7;
+  color: #534ab7;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.skill:hover {
+  background-color: #534ab7;
+  color: white;
+}
+
+/* Back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #534ab7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56Px;
+  font-size: 42px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+}
+
+#back-to-top:hover {
+  background-color: #3c3489;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+}

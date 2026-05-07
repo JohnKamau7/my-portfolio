@@ -16,3 +16,28 @@ function typeWriterHero() {
 }
 
 typeWriterHero()
+
+function highlightNav() {
+  const sections = document.querySelectorAll("section")
+  const navLinks = document.querySelectorAll("nav ul li a")
+
+  window.addEventListener("scroll", function() {
+    let current = ""
+
+    sections.forEach(function(section) {
+      const sectionTop = section.offsetTop - 100
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id")
+      }
+    })
+
+    navLinks.forEach(function(link) {
+      link.classList.remove("active")
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active")
+      }
+    })
+  })
+}
+
+highlightNav()
